@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Kingside",
+      "hasCanvas": false,
+      "bodyTextLen": 372,
+      "bodyTextHash": "c3ab9d8c17046c10c005ec7a1a2421921e043feca6e26c9be7689df0c583f18a",
+      "bodyTextPrefix": "2500 Elo coach Kingside A limit-strength Stockfish that plays ab",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Kingside",
+      "hasCanvas": false,
+      "bodyTextLen": 392,
+      "bodyTextHash": "78ff2959f91b2c8749c2acd08e52a2fd60b77a9588b4ace7d49dae0051f14a42",
+      "bodyTextPrefix": "2500 Elo coach Kingside A limit-strength Stockfish that plays ab",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

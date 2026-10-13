@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #1c1915;
+  --color-surface: #2a241c;
+  --color-surface-2: #352d23;
+  --color-fg: #f3ead8;
+  --color-muted: #b5a48a;
+  --color-gold: #c4a35a;
+  --color-gold-dim: #8c7340;
+  --color-border: #463c30;
+  --color-light: #ead7b4;
+  --color-darksq: #8b5e3c;
+  --color-blunder: #e15a4a;
+  --color-mistake: #e08a3c;
+  --color-miss: #d4b15a;
+  --color-inacc: #8faf78;
+  --color-good: #7d9a86;
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --radius: 0.85rem;
+}
+
+@layer base {
+  html, body { height: 100%; }
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+  button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer; }
+  button:disabled { cursor: default; opacity: 0.45; }
+}
+
+@keyframes pulse-dot {
+  50% { opacity: 0.35; }
+}
+.thinking-dot { animation: pulse-dot 1s ease-in-out infinite; }
+.piece-slide {
+  transition: transform 280ms cubic-bezier(0.22, 0.8, 0.24, 1);
+}
+.mark-pop {
+  animation: mark-pop 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@keyframes mark-pop {
+  from { transform: scale(0.4); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .thinking-dot, .mark-pop { animation: none; }
+  .piece-slide { transition: none; }
+}
